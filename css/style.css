@@ -144,10 +144,6 @@ a.active,
   flex: 0.333;
 }
 
-.row5 div {
-  flex: 0.25;
-}
-
 .box {
   margin-top: 7vh;
 }
@@ -570,6 +566,7 @@ footer h5 {
     position: relative;
     background: grey;
     padding: 18px;
+    height: 316px;
   }
 
   .columone img {
