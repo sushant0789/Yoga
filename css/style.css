@@ -330,6 +330,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 620px) {
+  .navbar li a {
+    padding: 14px 10px;
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .Main {
     display: block;
