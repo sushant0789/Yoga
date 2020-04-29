@@ -336,6 +336,10 @@ footer {
     padding: 14px 10px;
     font-size: 14px;
   }
+
+  .row2 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -350,10 +354,6 @@ footer {
 
   .Main .navbar {
     padding: 0 4px;
-  }
-
-  .row2 {
-    display: block;
   }
 
   .container5 {
