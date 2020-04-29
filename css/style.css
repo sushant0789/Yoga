@@ -144,6 +144,10 @@ a.active,
   flex: 0.333;
 }
 
+.row5 div {
+  flex: 1;
+}
+
 .box {
   margin-top: 7vh;
 }
