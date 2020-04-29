@@ -16,8 +16,6 @@ body {
 .Logo {
   margin-right: 16px;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .Logo img {
@@ -49,20 +47,22 @@ body {
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+.navbar li {
+  display: inline-block;
   text-decoration: none;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
+.navbar li a {
+  font-size: 16px;
+  padding: 14px 16px;
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 .dropdown .dropbtn {
@@ -70,7 +70,6 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -93,10 +92,15 @@ a.active,
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  padding: 0;
+  margin: 0;
 }
 
-.dropdown-content a {
-  float: none;
+.navbar li .dropdown-content li {
+  display: list-item;
+}
+
+.navbar li .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -287,6 +291,10 @@ footer {
   position: absolute;
 }
 
+.img-wrap {
+  height: 250px;
+}
+
 @media screen and (max-width: 992px) {
   /* empty */
 }
@@ -474,11 +482,8 @@ footer {
 }
 
 .columone {
-  height: 316px;
   margin-bottom: 24px;
   position: relative;
-  float: left;
-  width: 90%;
   background: grey;
   padding: 45px;
 }
@@ -550,6 +555,9 @@ footer h5 {
   text-align: center;
 }
 
+.line {
+  display: flex;
+}
 
 @media only screen and (max-width: 600px) {
   .responsive {
@@ -592,13 +600,15 @@ footer h5 {
     margin: auto;
   }
 
+  .row {
+    flex-direction: column;
+  }
+
   .columone {
     margin-top: 16px;
     margin-bottom: 24px;
-    height: 380px;
     position: relative;
-    float: left;
-    width: 27%;
+    width: 100%;
     background: grey;
     padding-right: 15px;
     padding-left: 15px;
@@ -655,7 +665,6 @@ footer h5 {
   .columone {
     height: 318px;
     position: relative;
-    float: left;
     width: 28.33%;
     background: grey;
     padding-right: 15px;
@@ -702,12 +711,12 @@ footer h5 {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .maindiv {
-    width: 1070px;
+    width: 100%;
     margin: 28px auto;
   }
 
   .columone {
-    width: 27.33%;
+    width: 28%;
     background: grey;
     padding: 18px;
   }
