@@ -16,6 +16,8 @@ body {
 .Logo {
   margin-right: 16px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .Logo img {
@@ -35,12 +37,8 @@ body {
 
 .Logotekst {
   text-decoration: none;
-  margin-left: 1vw;
-  margin-top: -3vh;
-  padding: -1vw;
   color: #3CB371;
   font-size: 12px;
-  position: absolute;
 }
 
 .navbar {
@@ -281,7 +279,7 @@ footer {
 .google-maps {
   overflow: hidden;
   position: relative;
-  height: 0;
+  height: 300px;
 }
 
 .google-maps iframe {
@@ -289,6 +287,10 @@ footer {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+#map {
+  height: 100%;
 }
 
 .img-wrap {
@@ -301,8 +303,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-  .Main a,
-  .Main button {
+  .logo a {
     font-size: 12px !important;
     padding: 14px !important;
   }
@@ -319,9 +320,7 @@ footer {
   }
 
   .Logotekst {
-    font-size: 0.5px !important;
-    margin-top: -3vh;
-    margin-left: 2vw;
+    margin-left: 10px;
   }
 }
 
@@ -330,8 +329,7 @@ footer {
     display: block;
   }
 
-  .Main a,
-  .Main button {
+  .navbar li a {
     font-size: 11px !important;
     padding: 14px 10px !important;
   }
@@ -346,12 +344,6 @@ footer {
 
   .container5 {
     display: block;
-  }
-
-  .Logotekst {
-    font-size: 0.5px !important;
-    margin-top: -10.5vh;
-    margin-left: 2vw;
   }
 
   .film {
@@ -519,8 +511,9 @@ footer {
   }
 }
 
-.form-btn {
-  float: right;
+.button {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .container1,
