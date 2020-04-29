@@ -99,6 +99,7 @@ a.active,
 
 .navbar li .dropdown-content li {
   display: list-item;
+  list-style: none;
 }
 
 .navbar li .dropdown-content a {
