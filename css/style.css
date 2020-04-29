@@ -331,10 +331,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
   .navbar li a {
     padding: 14px 10px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
