@@ -144,9 +144,12 @@ a.active,
   flex: 0.333;
 }
 
-.row5 div {
-  flex: 1;
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+  .row5 div {
+    flex: 1;
+  }
 }
+
 
 .box {
   margin-top: 7vh;
